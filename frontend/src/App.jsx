@@ -1,19 +1,27 @@
 import { useState, useEffect } from 'react'
 import './App.css'
+import API from "./axios"
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [message, setMessage] = useState("")
   
+  useEffect(() => {
+    const fetchMessage = async () => {
+      try {
+        const response = await API.get("/test")
+        setMessage(response.data)
+      } catch (error) {
+        console.error("Error fetching data: ", error)
+      }
+    }
+    fetchMessage()
+  }, [])
+
   return (
     <>
-      <h1>Supply Tracker System</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
+      <div>
+        <h1>Supply Tracker System</h1>
+        <p>Backend says: <strong>{message}</strong></p>
       </div>
     </>
   )

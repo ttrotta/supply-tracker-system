@@ -9,7 +9,7 @@ Supply Tracker System is a Full Stack application designed to streamline product
 - 📊 **Analytics & Reports**: Get insights into sales and inventory.
 - 🔐 **User Authentication & Roles**: Secure access with different user roles.
 
-## 🚀 Project Status  
+## Project Status  
 This project is currently in active development. Some features may not be fully implemented yet. Stay tuned for updates!  
 
 ## Technologies Used
@@ -25,19 +25,19 @@ This project is currently in active development. Some features may not be fully 
 
 ### Other Tools
 - **Maven** – Dependency management
-- **Docker** (optional) – Containerization
+- **Docker** Containerization
 - **Git** – Version control
 
 ## Installation & Setup
 ### Prerequisites
-- Java 17+
+- Java 21+
 - Node.js 16+
 - MySQL Server
 - Git
 
 ### Clone the Repository
 ```sh
- git clone https://github.com/yourusername/supply-tracker-system.git
+ git clone https://github.com/ttrotta/supply-tracker-system.git
  cd supply-tracker-system
 ```
 
