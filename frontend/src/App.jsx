@@ -1,28 +1,22 @@
-import { useState, useEffect } from 'react'
-import './App.css'
-import API from "./axios"
+import { Routes, Route } from 'react-router-dom'
+import PublicRoutes from './routes/PublicRoutes'
 
 function App() {
-  const [message, setMessage] = useState("")
-  
-  useEffect(() => {
-    const fetchMessage = async () => {
-      try {
-        const response = await API.get("/test")
-        setMessage(response.data)
-      } catch (error) {
-        console.error("Error fetching data: ", error)
-      }
-    }
-    fetchMessage()
-  }, [])
-
   return (
     <>
-      <div>
-        <h1>Supply Tracker System</h1>
-        <p>Backend says: <strong>{message}</strong></p>
+      <div className='testing-nav' style={{ display: 'flex', justifyContent: 'center' }}>
+        <nav>
+          <a href="/home" style={{ margin: '0 10px' }}>Home</a>
+          <a href="/login" style={{ margin: '0 10px' }}>Login</a>
+          <a href="/stock" style={{ margin: '0 10px' }}>Stock</a>
+          <a href="/delivery" style={{ margin: '0 10px' }}>Delivery</a>
+          <a href="/map" style={{ margin: '0 10px' }}>Map</a>
+          <a href="/clients" style={{ margin: '0 10px' }}>Clients</a>
+        </nav>
       </div>
+      <Routes>
+        <Route path="*" element={<PublicRoutes />} />
+      </Routes>
     </>
   )
 }
