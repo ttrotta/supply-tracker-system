@@ -1,8 +1,8 @@
 export const Home = () => {
     return (
         <>
-            <h1>Supply Tracker System</h1>
-            <h2>Home</h2>
+            <h1 className="text-3xl font-bold underline ">Supply Tracker System</h1>
+            <h2 className="">Home</h2>
         </>
     )
 }
