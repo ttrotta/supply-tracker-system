@@ -28,6 +28,7 @@ export default [
       'prettier/prettier': 'error',
       'react/react-in-jsx-scope': 'off',
       'react/prop-types': 'off',
+      'linebreak-style': ['error', 'unix'],
     },
     settings: {
       react: {
