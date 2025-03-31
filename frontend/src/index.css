@@ -6,5 +6,5 @@
 */
 
 .sidebar-section-full {
-  @apply flex rounded-md p-3 cursor-pointer hover:bg-gray-500 text-gray-300 text-lg items-center gap-x-4;
+  @apply flex rounded-md p-3 cursor-pointer hover:bg-gray-500 text-gray-300 text-lg items-center gap-x-3;
 }

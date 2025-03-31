@@ -1,7 +1,9 @@
-const PanelBar = () => {
+const Panelbar = () => {
   return (
     <header className='bg-gray-800 text-white flex items-center p-4'>
-      <h1 className='flex-1 text-lg'>Supply Tracker System</h1>
+      <h1 className='flex-1 text-lg text-center md:text-left md:ml-2'>
+        Supply Tracker System
+      </h1>
 
       <div className='hidden md:block mr-4'>
         <span>Random User</span>
@@ -16,4 +18,4 @@ const PanelBar = () => {
   );
 };
 
-export default PanelBar;
+export default Panelbar;
