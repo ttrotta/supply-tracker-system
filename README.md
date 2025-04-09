@@ -41,20 +41,6 @@ This project is currently in active development. Some features may not be fully 
  cd supply-tracker-system
 ```
 
-### Backend Setup
-```sh
-cd backend
-mvn clean install
-mvn spring-boot:run
-```
-
-### Frontend Setup
-```sh
-cd frontend
-npm install
-npm start
-```
-
 ## Contribution
 Feel free to fork this repository and submit pull requests. All contributions are welcome! 🚀
 
